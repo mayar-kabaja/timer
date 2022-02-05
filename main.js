@@ -36,7 +36,7 @@ function timer(){
 
 
         if(allSec === 0){
-            clearTime()
+            clearTime();
         }else {
             allSec-- ;
         }
@@ -72,11 +72,11 @@ stop.addEventListener("click" ,()=>{
 })
 
 continues.addEventListener ("click" ,()=>{
-
+    if( allSec !== 0){
     arr = divTime.innerHTML.split(":").map( e => Number(e));
     allSec = ( arr[0]*60*60 +(arr[1])*60 +arr[2]) - 1;
     
-    setIntervall();
+    setIntervall();}
     
 
    
