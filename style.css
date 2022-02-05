@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container .timer_option {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+     color: #fff;
+     font-size: 30px;
+}
+.container .timer_option select{
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.time {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+
+}
+button {
+    border: none;
+    background-color: #fff;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+@media(max-width:600px){
+    button{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+}
