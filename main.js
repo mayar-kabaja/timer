@@ -17,16 +17,16 @@ function timer(){
     let min = Math.floor((allSec % 3600) / 60 );
     let sec = Math.floor((allSec % 3600) % 60 );
 
-    if (hour<9){
+    if (hour<10){
         hour = `0${hour}`
 
     }
-    if (min<9){
+    if (min<10){
         min = `0${min}`
 
 
     }
-    if (sec<9){
+    if (sec<10){
         sec = `0${sec}`
 
 
